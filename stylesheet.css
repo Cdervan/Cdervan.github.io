@@ -1,0 +1,34 @@
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+h2 {
+    font-size: 25px;
+    color:aquamarine
+}
+#div-intro {
+    color: darkgrey;
+}
+#quick-links {
+    font-size: 12px;
+    text-align: left;
+    color:darkblue
+}
+.eel {
+    font-size: 18px;
+    color:red;
+}
+p {
+    color:mediumpurple;
+    
+}
+.social {
+    target:blank;
+}
+body {
+   background-color:darkslategrey;
+}
+#fgcu_img {
+    float: right;
+}
