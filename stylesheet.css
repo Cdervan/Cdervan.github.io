@@ -1,14 +1,12 @@
-
 h1 {
   color: navy;
   margin-left: 20px;
 }
 h2 {
-    font-size: 25px;
-    color:aquamarine
+    font-size: 25px
 }
 #div-intro {
-    color: darkgrey;
+    color: blueviolet
 }
 #quick-links {
     font-size: 12px;
@@ -17,18 +15,18 @@ h2 {
 }
 .eel {
     font-size: 18px;
-    color:red;
+    color:rebeccapurple;
 }
 p {
-    color:mediumpurple;
-    
+    color:black;
 }
 .social {
     target:blank;
 }
 body {
-   background-color:darkslategrey;
+    background-color:slategrey
 }
-#fgcu_img {
+
+img {
     float: right;
 }
