@@ -12,9 +12,55 @@
     <p>Deleted obsolete classes from css code to avoid CSS validator errors</p>
     <p>Added a usability page to list the recent changes on the website</p>
     <p>Added my new LinkedIn profile</p>
+    <p>Added my Caesar Cipher to the usability page</p>
+<br>
+    
+<h1>Caesar Cipher</h1>
+  <p>To use the Caesar Cipher just refresh the page until I can figure out how to link it to a button</p>
+<!--input id="in"--> 
+<!--button type="button" onclick="caesarShift()">Submit</button-->
+    <!--Commented out submit button because I could not get it to work just yet-->
+    
+<!--Caesar Cipher Javascript-->
+      <script>
 
+var shift = parseInt(prompt("Enter shift"), 10)
+
+text = prompt("Enter text")
+
+output = ""
+
+
+for (i=0; i<text.length; i++) {
+
+	letters = text.substr(i,1)
+
+	asciiNum = letters.charCodeAt()
+
+	if ((asciiNum >= 65) && (asciiNum <= 90)) {
+
+		letters = String.fromCharCode(((asciiNum - 65 + shift) % 26) + 65)
+
+	} else if ((asciiNum >= 97) && (asciiNum <= 122)) {
+
+		letters = String.fromCharCode(((asciiNum - 97 + shift) % 26) + 97)
+
+	} else {
+
+		letters = String.fromCharCode(asciiNum)
+
+	}
+
+	output += letters
+
+}
+alert(output)
+
+
+</script>
+  <br>
 </body>
 <footer>
-  <a href="index.html">Back to Main</a>
+  <a href="index.html">Back to Main Page</a>
 </footer>
 </html>
