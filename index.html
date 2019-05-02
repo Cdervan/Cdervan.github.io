@@ -182,6 +182,39 @@
 <!--Text displays when video does not-->
           Your browser does not support the video tag.
       </video>
+    
+    <h2>Caesar Cipher</h2>
+  
+      <script type="text/javascript">
+//Caesar cipher javascript code lists out all values and then all the values moved over 2 spaces in two seperate arrays
+        function cipherCode(keyIn, keyOut, msg) {
+
+        var result = "";
+
+        var add = function(ch) { result += (keyIn.indexOf(ch)==-1) ? ch : keyOut[keyIn.indexOf(ch)]; }
+
+        for (var i = 0; i < msg.length; i++) { add(msg[i]); }
+
+        return result;
+
+}
+    
+
+        var k1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+        var k2 = "CDEFGHIJKLMNOPQRSTUVWXYZABcdefghijklmnopqrstuvwxyzab";
+    
+        function encode(message) { cipherForm.message.value = cipherCode(k1, k2, message); }
+
+      </script>
+    
+      <form name="cipherForm">
+
+        <textarea name="message" cols="50" rows="7"></textarea><br />
+
+        <input type="button" value="Encode" onclick="encode(cipherForm.message.value);" />
+
+      </form>
                                     
 </body>
 <footer>
